@@ -24,7 +24,6 @@ public class ConcurrencyUtil {
             executor.awaitTermination(1, TimeUnit.DAYS);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-            Thread.currentThread().interrupt();
         }
     }
 
